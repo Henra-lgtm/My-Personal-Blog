@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Bank</title>
+    <style>
+        input[type="submit"], input[type="reset"] {
+            width: 40%;
+            height: 30px;
+            padding: 2px;
+            align-items: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #787878;
+        }
+    </style>
+</head>
+<body>
+    <table border="0" align="center">
+        <tr>
+            <th colspan="7" align="left">Formulir Aplikasi Rekening Perorangan (AR-01)</th>
+            <th><img src="download-removebg-preview (2).png" alt="logo", width="40" align="center">Bank BRI</th>
+        </tr>
+        <tr>
+            <th colspan="6" align="left">CIF</th>
+            <td colspan="2" align="center">Melayani Dengan Setulus Hati</td>
+        </tr>
+        <tr>
+            <td colspan="8" align="center">Mohon diisi oleh nasabah dengan huruf cetak pada kolom berwarna putih dan berikan (centang) sesuai pilihan</td>
+        </tr>
+        <tr>
+            <td colspan="8">Nama Lengkap : <input type="text" name="nama" size="30" maxlength="35"></td>   
+        </tr>
+        <tr>
+            <th colspan="8  " align="left">Nama sesuai kartu ID : Diinput langsung oleh petugas</th>
+        </tr>
+        <tr bgcolor="black">
+            <th align="left" colspan="8"><font color="EEEEEE",>1. DATA NASABAH</font></th>
+        </tr>
+        <tr>
+            <th align="left" bgcolor="black" colspan="6"><font color="EEEEEE",>DATA PRIBADI</font></th>
+            <td>
+                <input type="radio" id="Baru" name="jns" value="Baru"/>Baru
+            </td>
+            <td>
+                <input type="radio" id="Pengkinian" name="jns" value="Pengkinian"/>Pengkinian
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5">Jenis Kelamin : </td>
+            <td>
+                <input type="radio" id="laki" name="klm" value="laki"/>Laki-laki
+            </td>   
+            <td>
+                <input type="radio" id="perempuan" name="klm" value="perempuan"/>Perempuan
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5">Kewarganegaraan : </td>
+            <td><input type="checkbox" id="WNI" name="WNI" value="WNI"/>WNI</td>
+            <td><input type="checkbox" id="WNA" name="WNA" value="WNA"/>WNA</td>
+            <td>Negara <input type="text" name="negara" size="30" maxlength="35"></td>
+        </tr>
+        <tr>
+            <td colspan="5">Tempat Lahir : <input type="text" name="negara" size="30" maxlength="35"></td>
+            <td colspan="3">Tanggal Lahir : <input type="text" name="negara" size="30" maxlength="35"> </td>
+        </tr>
+        <tr>
+            <td colspan="8">Nama Ibu Kandung : <input type="text" name="negara" size="30" maxlength="35"></td>
+        </tr>
+        <tr>
+            <td colspan="5">Jenis Identitas : </td>
+            <td><input type="radio" id="KTP" name="jns" value="KTP"/>KTP</td>
+            <td><input type="radio" id="SIM" name="jns" value="SIM"/>SIM</td>
+            <td><input type="radio" id="Passport dilampiri KITAP/KITAP/KIMS" name="jns" value="Passport dilampiri KITAP/KITAP/KIMS"/>Passport dilampiri KITAP/KITAP/KIMS</td>
+        </tr>
+        <tr>
+            <td colspan="7">Nomor Identitas : <input type="text" name="Idt" size="30" maxlength="35"></td></td>
+            <td>Tanggal Terbit : <input type="date" id="tanggal" name="tanggal" size="30" maxlength="35"/></td>
+        </tr>
+        <tr>
+            <td colspan="7"></td>
+            <td>Tanggal Kadaluarsa : <input type="date" id="tanggal" name="tanggal" size="20" maxlength="25"/>  </td>
+        </tr>
+        <tr>
+            <td>Pendidikan terakhir : </td>
+            <td><input type="radio" id="SD" name="jns" value="SD"/>SD</td>
+            <td><input type="radio" id="SLTP" name="jns" value="SLTP"/>SLTP</td>
+            <td><input type="radio" id="SLTA" name="jns" value="SLTA"/>SLTA</td>
+            <td><input type="radio" id="S1" name="jns" value="S1"/>S1</td>
+            <td><input type="radio" id="S2" name="jns" value="S2"/>S2</td>
+            <td><input type="radio" id="S3" name="jns" value="S3"/>S3</td>
+            <td><input type="radio" id="Lainnya..." name="jns" value="Lainnya..."/>Lainnya...</td>
+        </tr>
+        <tr>
+            <td colspan="2">Agama :</td>
+            <td><input type="radio" id="Islam" name="agama" value="Islam"/>Islam</td>
+            <td><input type="radio" id="Kristen" name="agama" value="Kristen"/>Kristen</td>
+            <td><input type="radio" id="Katolik" name="agama" value="Katolik"/>Katolik</td>
+            <td><input type="radio" id="Budha" name="agama" value="Budha"/>Budha</td>
+            <td><input type="radio" id="Hindu" name="agama" value="Hindu"/>Hindu</td>
+            <td><input type="radio" id="Lainnya" name="agama" value="Lainnya"/>Lainnya</td>
+        </tr>
+        <tr>
+            <td colspan="2">Status Perkawinan</td>
+            <td><input type="radio" id="Lajang" name="status" value="Lajang"/>Lajang</td>
+            <td><input type="radio" id="Kawin" name="status" value="Kawin"/>Kawin</td>
+            <td colspan="3"><input type="radio" id="Janda/Duda" name="status" value="Janda/Duda"/>Janda/Duda</td>
+            <td>Hobby Nasabah :  <input type="text" name="Idt" size="20" maxlength="25"></td>
+        </tr>
+        <tr>
+            <td colspan="8">Kode Pos sesuai alamat pada ID :  <input type="text" name="Idt" size="30" maxlength="35"></td>
+        </tr>
+        <tr>
+            <th colspan="8" align="left">Alamat Domisili (Diisi hanya apabila berbeda alamat pada Identitas) : <input type="text" name="Idt" size="53" maxlength="58"></th>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="6"><input type="text" name="Idt" size="98" maxlength="103"></td>
+        </tr>
+        <tr>
+            <td >RT/RW : </td>
+            <td colspan="2"><input type="text" name="Idt" size="5" maxlength="10"></td>
+            <td colspan="2"><input type="text" name="Idt" size="5" maxlength="10"></td>
+            <td colspan="3">Kelurahan/Desa : <input type="text" name="Idt" size="48" maxlength="53"></td>
+        </tr>
+        <tr>
+            <td colspan="5">Kecamatan : <input type="text" name="Idt" size="30" maxlength="35"></td>
+            <td colspan="3">Kota : <input type="text" name="Idt" size="30" maxlength="35"></td>
+        </tr>
+        <tr>
+            <td colspan="6">Provinsi : <input type="text" name="Idt" size="30" maxlength="35"></td>
+            <td colspan="2">Kode Pos : <input type="text" name="Idt" size="10" maxlength="15"></td>
+        </tr>
+        <tr>
+            <th>Informasi Kontak : </th>
+            <td colspan="4">Telepon <input type="text" name="Idt" size="30" maxlength="35"></td>
+            <td colspan="3">Handphone <input type="text" name="Idt" size="30" maxlength="35"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="3">Fokmil : <input type="text" name="Idt" size="30" maxlength="35"></td>
+            <td colspan="3">Email : <input type="text" name="Idt" size="30" maxlength="35"></td>
+        </tr>
+        <tr>
+            <td colspan="6"></td>
+            <td></td>
+            <td align="center"><input type="reset" name="reset" value="Hapus" />
+                <input type="submit" name="submit" value="Simpan" />
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
